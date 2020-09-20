@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>역시스터디</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/heroic-features.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/KoPubDotum.css">
+  <style> 
+    body { font-family: 'KoPub Dotum'; font-weight: 400; } 
+    p { font-family: 'KoPub Dotum'; font-weight: 300; }
+    .moneycard {
+      padding-left: 10px;
+      padding-right: 15px;
+}
+  </style>  
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 500
+        });
+    });
+    function kdh(){
+      $("#modalkdh").modal();
+    }
+    function ksj(){
+      $("#modalksj").modal();
+    }
+    function jjh(){
+      $("#modaljjh").modal();
+    }
+    function rule(){
+      $("#modalrule").modal();
+    }
+
+    $(function () {
+	    $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="img/logo.png" style="width: 30px; height: 30px;"> YEOKSI STUDY</a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <button type="button" class="btn btn-light" onclick="rule()">스터디 규칙</button>
+        </ul>
+      </div>
+    </div>
+    
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    
+    <!-- Jumbotron Header -->
+    <!--style="background-image: url(https://cdn.pixabay.com/photo/2015/12/08/01/04/bookshelf-1082309_1280.jpg); background-size: 100%; background-repeat: no-repeat;"-->
+    <header class="jumbotron my-4" style="background-image: url(img/imgbg.png); background-size: 100%; background-repeat: no-repeat;">
+      <h1 class="display-3 text-white">공부는, 숙제로 만들어 가는 것</h1>
+      <p class="lead text-white">역시스터디는 구글 클래스룸이라는 플랫폼을 통해 서로가 서로에게 숙제를 제공하므로써 성적 향상을 지향하는 스터디 그룹입니다.</p><br>
+      <div class="alert alert-dark">
+      <h3>고기파티 하기까지 남은 정도...</h3>
+      
+      <div class="progress">
+        <div class="progress-bar bg-danger" id="bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="right" title="5,000원"></div>
+        
+      </div>
+      <div class="d-flex justify-content-between">
+        <div>0원</div>
+        <div>100,000원</div>
+      </div>
+    <script type="text/javascript">
+        var i = 0;
+        var progressBar = $("#bar");
+        function countNumbers(){
+            if(i < 5){
+                i = i + 1;
+                progressBar.css("width", i + "%");
+            }
+            // Wait for sometime before running this script again
+            setTimeout("countNumbers()", 100);
+        }
+        countNumbers();
+    </script>
+    </div>
+      <p class="lead"></p>
+    </header>
+    <br>
+    <div class="row text-center">
+      <div class="col-lg-4 h-100 text-center text-lg-left my-auto text-white"><hr></div>
+      <div class="col-lg-4 h-100 text-center text-lg-center my-auto"><h3>스터디 메이트</h3></div>
+      <div class="col-lg-4 h-100 text-center text-lg-left my-auto text-white"><hr></div>
+    </div><br><br>
+    <div class="row text-center">
+      <div class="col-lg-4">
+        <img src="img/imgkdh.png" width="140" height="140">
+        <h2><br>김동현</h2><br>
+        <h1><span class="counter">0</span>원</h1><br>
+        <p><button type="button" class="btn btn-info" onclick="kdh()">자세히 보기 »</button></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="img/imgksj.png" width="140" height="140">
+        <h2><br>김선종</h2><br>
+        <h1><span class ="counter">5,000</span>원</h1><br>
+        <p><button type="button" class="btn btn-info" onclick="ksj()">자세히 보기 »</button></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="img/imgjjh.png" width="140" height="140">
+        <h2><br>조재희</h2><br>
+        <h1><span class="counter">0</span>원</h1><br>
+        <p><button type="button" class="btn btn-info" onclick="jjh()">자세히 보기 »</button></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <br><br>
+    <div class="row text-center">
+      <div class="col-lg-4 h-100 text-center text-lg-left my-auto text-white"><hr></div>
+      <div class="col-lg-4 h-100 text-center text-lg-center my-auto"><h3>공부 과목 바로가기</h3></div>
+      <div class="col-lg-4 h-100 text-center text-lg-left my-auto text-white"><hr></div>
+    </div><br><br>
+    <!-- Page Features -->
+    <div class="row text-center">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/english.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">영어</h4>
+            <p class="card-text">English</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://classroom.google.com/c/MTQwNDcyNjEyODc3" class="btn btn-primary" target="_blank">클래스룸 바로가기</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/physics.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">물리</h4>
+            <p class="card-text">Physics</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://classroom.google.com/c/MTQwNDc5MzMzMDU5" class="btn btn-primary" target="_blank">클래스룸 바로가기</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/chemistry.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">화학</h4>
+            <p class="card-text">Chemistry</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://classroom.google.com/c/MTQwNDg0NzcwODY1" class="btn btn-primary" target="_blank">클래스룸 바로가기</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/geography.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">지구과학</h4>
+            <p class="card-text">Earth Science</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://classroom.google.com/c/MTQwNDc5MzMzMTI5" class="btn btn-primary" target="_blank">클래스룸 바로가기</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div><br><br>
+    <!-- /.row -->
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; 역시스터디 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!--Modals-->
+  <div class="modal fade" id="modalkdh" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">김동현의 고기파티 기여 목록</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <span class="text-center"><h2>NO RESULT</h2></span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalksj" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">김선종의 고기파티 기여 목록</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="card h-100">
+            <div class="moneycard">
+            <div class="row">
+              <div class="card-body col-lg-6 h-100 text-center text-lg-left my-auto">
+                <h4 class="card-title">9월 19일 물리 숙제</h4>
+                <p class="card-text">새벽 1시 16분 제출</p>
+              </div>
+              <div class="col-lg-6 h-100 text-right text-lg-right my-auto" style="color:green;"><h1>5,000원</h1></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modaljjh" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">조재희의 고기파티 기여 목록</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <span class="text-center"><h2>NO RESULT</h2></span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalrule" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">스터디 규칙</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>역시스터디는 구글 클래스룸이라는 플랫폼을 통해 서로가 서로에게 숙제를 제공하므로써 성적 향상을 지향하는 스터디 그룹입니다. 
+            <br><br>성적을 효율적으로 향상시키기 위해 다음과 같은 규칙을 적용합니다.
+            <br><br><strong>숙제 내주기 :</strong><br> - 숙제는 과목별로 맡은사람이 일주일에 1번에서 2번 숙제를 역시스터디 구글계정을 통해 제공합니다.<br> - 숙제를 제공할 시에 유의할 점은 자신도 수행해낼 수 있는 양만큼 낸다는 것입니다.<br> - 숙제는 해당 날짜의 오후 11:59 제출로 설정하는 것을 원칙으로 합니다.
+            <br><br><strong>제 시간 내에 제출하지 않았을 경우 :</strong><br> - 제 시간 내에 제출하지 않았을 경우 시험 끝나고 고기파티를 위해 돈을 10,000원씩 저금합니다.<br> - 만약 새벽 2시까지 완료할 수 있을 것 같은 경우에는, 5,000원만 일단 추가하고, 2시까지 내지 못할 경우 5,000원을 더 추가합니다.
+            <br><br><strong>모두 간단한 규칙을 지켜 성적을 향상시켜봅시다.</strong></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/waypoints.min.js"></script>
+  <script src="vendor/jquery/jquery.counterup.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
