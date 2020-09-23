@@ -28,7 +28,7 @@
 
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script>
-    jQuery(document).ready(function( $ ) {
+    jQuery(document).ready(function($) {
         $('.counter').counterUp({
             delay: 10,
             time: 500
@@ -42,6 +42,9 @@
     }
     function jjh(){
       $("#modaljjh").modal();
+    }
+    function bjw(){
+      $("#modalbjw").modal();
     }
     function rule(){
       $("#modalrule").modal();
@@ -107,23 +110,29 @@
       <div class="col-lg-4 h-100 text-center text-lg-left my-auto text-white"><hr></div>
     </div><br><br>
     <div class="row text-center">
-      <div class="col-lg-4">
+      <div class="col-lg-3">
         <img src="img/imgkdh.png" width="140" height="140">
         <h2><br>김동현</h2><br>
         <h1><span class="counter">0</span>원</h1><br>
         <p><button type="button" class="btn btn-info" onclick="kdh()">자세히 보기 »</button></p>
       </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
+      <div class="col-lg-3">
         <img src="img/imgksj.png" width="140" height="140">
         <h2><br>김선종</h2><br>
         <h1><span class ="counter">5,000</span>원</h1><br>
         <p><button type="button" class="btn btn-info" onclick="ksj()">자세히 보기 »</button></p>
       </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
+      <div class="col-lg-3">
         <img src="img/imgjjh.png" width="140" height="140">
         <h2><br>조재희</h2><br>
         <h1><span class="counter">0</span>원</h1><br>
         <p><button type="button" class="btn btn-info" onclick="jjh()">자세히 보기 »</button></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3">
+        <img src="img/imgbjw.png" width="140" height="140">
+        <h2><br>부재원</h2><br>
+        <h1><span class="counter">0</span>원</h1><br>
+        <p><button type="button" class="btn btn-info" onclick="bjw()">자세히 보기 »</button></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
     <br><br>
@@ -252,6 +261,25 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">조재희의 고기파티 기여 목록</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <span class="text-center"><h2>NO RESULT</h2></span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalbjw" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">부재원의 고기파티 기여 목록</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
